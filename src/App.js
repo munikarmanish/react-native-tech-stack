@@ -8,11 +8,17 @@ import LibraryList from './components/LibraryList';
 
 const App = () => (
   <Provider store={createStore(reducers)}>
-    <View>
+    <View style={styles.container}>
       <Header headerText="Tech Stack" />
       <LibraryList />
     </View>
   </Provider>
 );
+
+const styles = {
+  container: {
+    flex: 1,
+  },
+};
 
 export default App;
